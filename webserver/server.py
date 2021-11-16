@@ -112,10 +112,10 @@ def index():
   #
   # example of a database query
   #
-  cursor = g.conn.execute("SELECT 1")
+  cursor = g.conn.execute("SELECT * FROM Animal_Founded")
   lines = []
   for result in cursor:
-    lines.append(list(result))  # can also be accessed using result[0]
+    lines.append(result)  # can also be accessed using result[0]
     print(list(result))
   cursor.close()
 
