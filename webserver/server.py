@@ -36,7 +36,7 @@ DATABASEURI = "postgresql://rs4202:3746@34.74.246.148/proj1part2"
 # This line creates a database engine that knows how to connect to the URI above.
 #
 engine = create_engine(DATABASEURI)
-
+conn = engine.connect()
 #
 # Example of running queries in your database
 # Note that this will probably not work if you already have a table named 'test' in your database, containing meaningful data. This is only an example showing you how to run queries in your database using SQLAlchemy.
