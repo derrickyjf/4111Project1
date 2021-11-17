@@ -166,6 +166,30 @@ def index():
 def another():
   return render_template("another.html")
 
+@app.route('/breeder')
+def breeder():
+  return render_template("breeder.html")
+
+@app.route('/facility')
+def facility():
+  return render_template("facility.html")
+
+@app.route('/food')
+def food():
+  return render_template("food.html")
+
+@app.route('/animalShow')
+def animalShow():
+  return render_template("animalShow.html")
+
+@app.route('/manager')
+def manageer():
+  return render_template("manager.html")
+
+@app.route('/park')
+def park():
+  return render_template("park.html")
+
 
 # Example of adding new data to the database
 @app.route('/add', methods=['POST'])
